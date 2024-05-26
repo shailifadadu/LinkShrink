@@ -1,0 +1,21 @@
+---------URL SHORTENER------------
+
+Design a URL shortener service that takes in a valid url and returns a shortened url, redirecting the user to the previously provided URL.
+
+Also, keep track of total visits/clicks on URL
+
+-> Routes: 
+
+POST/URL - Generates a new short URL and returns shortened URL in format example.com/random-id
+
+GET/:id - Redirects the user to original URL
+
+GET/URL/analytics/:id - Returns the clicks for the provided short id
+
+//Installing dependencies
+npm i express
+npm i mongoose
+npm i shortid
+npm install uuid
+npm i cookie-parser
+npm i jsonwebtoken
