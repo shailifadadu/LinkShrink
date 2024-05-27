@@ -10,6 +10,14 @@ This is a simple URL shortener project built with NodeJS and ExpressJS... It aim
 
 -  Simple and intuitive user interface.💻
 
+<h2 align="center"><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/High%20Voltage.png" alt="High Voltage" width="30" height="30" /> Technologies Used</h2>
+
+<div align="center">
+<img src="https://img.shields.io/badge/NodeJS-E34F26.svg?style=for-the-badge&logo=NodeJS&logoColor=white">
+<img src="https://img.shields.io/badge/ExpressJS-1572B6.svg?style=for-the-badge&logo=ExpressJS&logoColor=black">
+<img src="https://img.shields.io/badge/MongoDB-00000.svg?style=for-the-badge&logo=MongoDB&logoColor=white">
+</div>
+
 <h2 align="center"><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Hammer%20and%20Wrench.png" alt="High Voltage" width="30" height="30"> Installation</h2>
 
 1. **Clone the repository:**
