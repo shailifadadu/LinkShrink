@@ -1,5 +1,8 @@
 const jwt = require("jsonwebtoken");
-const secret = "Shaily@$123";
+const env = require("dotenv").config();
+
+const secret = process.env.JWT_SECRET; 
+const expiry = process.env.JWT_EXPIRY;
 
 //making tokens for user
 function setUser(user) {
@@ -9,7 +12,8 @@ function setUser(user) {
       email: user.email,
       role: user.role,
     },
-    secret
+    secret,
+    { expiresIn: expiry } 
   );
 }
 
