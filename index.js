@@ -1,9 +1,9 @@
+require("dotenv").config();
 const express = require("express");
 const path = require("path");
 const cookieParser = require("cookie-parser");
 const { connectToMongoDB } = require("./connect");
 const { checkForAuthentication, restrictTo } = require("./middlewares/auth");
-const env = require("dotenv").config();
 
 const URL = require("./models/url");
 
@@ -12,6 +12,9 @@ const staticRoute = require("./routes/staticRouter");
 const userRoute = require("./routes/user");
 const app = express();
 const PORT = 8001;
+
+// Debugging: Log the DATABASE_URI
+console.log("Loaded DATABASE_URI:", process.env.DATABASE_URI);
 
 connectToMongoDB(process.env.DATABASE_URI).then(() =>
   console.log("Mongodb Connected!")
